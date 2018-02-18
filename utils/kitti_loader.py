@@ -72,8 +72,14 @@ class KittiLoader(object):
                 self.object_dir, 'label_2', '*.txt'))
             self.f_label.sort()
 
+        #### PRINTING ####
+
+        # print(self.f_rgb)
+        print(len(self.f_rgb), len(self.f_lidar), len(self.f_label))
         self.data_tag = [name.split('/')[-1].split('.')[-2]
                          for name in self.f_rgb]
+        # print("In kitti_loader printing self.data_tag")
+        # print(self.data_tag)
         assert(len(self.data_tag) == len(self.f_rgb) == len(self.f_lidar))
         self.dataset_size = len(self.f_rgb)
         self.already_extract_data = 0

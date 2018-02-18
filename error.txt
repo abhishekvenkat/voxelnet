@@ -1,0 +1,7 @@
+4 4 4
+Dataset total length: 4
+77 77 77
+Dataset total length: 77
+Reading model parameters from ./save_model/default
+In train.py with len(train_loader) = 4
+train ['aug_000003_2_0_4614']

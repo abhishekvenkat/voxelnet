@@ -78,6 +78,7 @@ def main(_):
                     tf.global_variables_initializer().run()
 
                 # train and validate
+                print("In train.py with len(train_loader) = {0}".format(len(train_loader)))
                 iter_per_epoch = int(
                     len(train_loader) / (args.single_batch_size * cfg.GPU_USE_COUNT))
                 is_summary, is_summary_image, is_validate = False, False, False
